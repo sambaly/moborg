@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        tr:nth-of-type(odd) {
+            background: #eee;
+        }
+
+        th {
+            background: #333;
+            color: white;
+            font-weight: bold;
+        }
+
+        td, th {
+            padding: 6px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+    </style>
 </head>
 <body class="p-4">
-    <h1 class="text-3xl mb-6">Sessions</h1>
+    <h1 class="text-3xl mb-6">Huddles</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date/Time</th>
+                <th># Registered</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="huddle: ${ huddles }">
+                <td th:text="${ huddle.name }"></td>
+                <td th:text="${ huddle.dateTime }"></td>
+                <td th:text="${ huddle.numberRegistered }"></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

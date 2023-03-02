@@ -19,11 +19,14 @@ This project manages remote mob programming huddleSummaryViews:
    - Number of people registered
 
 2. View Details of a huddle
-  - Participant detail
-    - Name
-    - Github username
-    - Email address
-    - Discord username
-    - New to group ?
+
+   Requires huddles to have identifiers to be inserted into the URI.
+
+   - Participant detail
+     - Name
+     - Github username
+     - Email address
+     - Discord username
+     - New to group ?
 
 3. Create new huddleSummaryView

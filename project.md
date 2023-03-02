@@ -1,28 +1,29 @@
 # Moborg
 
-This project manages remote mob programming huddles:
+This project manages remote mob programming huddleSummaryViews:
 
 * Registration:
-  + limit to 5 persons per huddle
+  + limit to 5 persons per huddleSummaryView
   + Info for participants: name, Github username, email address, Discord username
   - Integrate with calendars
   - integrate with github for adding collaborators to the repo
   - Integrate with Mobti.me
   - Integrate with zoom
 * Dashboard:
-  + Create a new huddle
-  + See huddles and how many registrations
+  + Create a new huddleSummaryView
+  + See huddleSummaryViews and how many registrations
   
-1. See existing huddles
+1. See existing huddleSummaryViews
    - Name
    - Date/time (including timezone)
    - Number of people registered
-   - Participant detail
-     - Name
-     - Github username
-     - Email address
-     - Discord username
-     - New to group ?
-Go to /dashboard, we'll see existing huddles
 
-2. Create new huddle
+2. View Details of a huddle
+  - Participant detail
+    - Name
+    - Github username
+    - Email address
+    - Discord username
+    - New to group ?
+
+3. Create new huddleSummaryView

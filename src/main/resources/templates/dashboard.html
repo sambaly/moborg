@@ -37,10 +37,10 @@
             </tr>
         </thead>
         <tbody>
-            <tr th:each="huddle: ${ huddles }">
-                <td th:text="${ huddle.name }"></td>
-                <td th:text="${ huddle.dateTime }"></td>
-                <td th:text="${ huddle.numberRegistered }"></td>
+            <tr th:each="huddleSummaryView: ${ huddleSummaryViews }">
+                <td th:text="${ huddleSummaryView.name }"></td>
+                <td th:text="${ huddleSummaryView.dateTime }"></td>
+                <td th:text="${ huddleSummaryView.numberRegistered }"></td>
             </tr>
         </tbody>
     </table>

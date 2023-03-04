@@ -1,5 +1,6 @@
 package com.africawalletsas.moborg.adapter.in.web;
 
+import com.africawalletsas.moborg.domain.HuddleService;
 import org.junit.jupiter.api.Test;
 import org.springframework.ui.ConcurrentModel;
 import org.springframework.ui.Model;
@@ -12,7 +13,8 @@ class DashboardControllerTest {
 
     @Test
     void givenOneHuddleResultsInHuddlePutIntoModel() {
-        DashboardController dashboardController = new DashboardController();
+        HuddleService huddleService = new HuddleService();
+        DashboardController dashboardController = new DashboardController(huddleService);
 
         Model model = new ConcurrentModel();
         dashboardController.dashboardView(model);

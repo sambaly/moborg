@@ -1,5 +1,7 @@
 package com.africawalletsas.moborg.adapter.in.web;
 
+import com.africawalletsas.moborg.domain.Huddle;
+import com.africawalletsas.moborg.domain.HuddleService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,12 +11,19 @@ import java.util.List;
 @Controller
 public class DashboardController {
 
+    private final HuddleService huddleService;
+
+    public DashboardController(HuddleService huddleService) {
+        this.huddleService = huddleService;
+    }
+
     @GetMapping("/dashboard")
     public String dashboardView(Model model) {
 
-        HuddleSummaryView huddleSummaryView = new HuddleSummaryView("Name", "Date/Time", 1);
+        List<Huddle> huddles = huddleService.activeHuddles();
+        List<HuddleSummaryView> huddleSummaryViews = HuddleSummaryView.from(huddles);
 
-        model.addAttribute("huddles", List.of(huddleSummaryView));
+        model.addAttribute("huddles", huddleSummaryViews);
         return "dashboard";
     }
 

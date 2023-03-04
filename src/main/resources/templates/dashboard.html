@@ -37,7 +37,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr th:each="huddleSummaryView: ${ huddleSummaryViews }">
+            <tr th:each="huddleSummaryView: ${ huddles }">
                 <td th:text="${ huddleSummaryView.name }"></td>
                 <td th:text="${ huddleSummaryView.dateTime }"></td>
                 <td th:text="${ huddleSummaryView.numberRegistered }"></td>

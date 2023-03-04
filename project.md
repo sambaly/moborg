@@ -3,19 +3,24 @@
 This project manages remote mob programming huddleSummaryViews:
 
 * Registration:
-  + limit to 5 persons per huddleSummaryView
+  + limit to 5 persons per huddle
   + Info for participants: name, Github username, email address, Discord username
-  - Integrate with calendars
+  - Integrate with calendars ( both theirs and mine )
   - integrate with github for adding collaborators to the repo
   - Integrate with Mobti.me
   - Integrate with zoom
+  - Integrate with Discord
+  - Provide worldTimeBuddy.com links for huddles 
+
 * Dashboard:
-  + Create a new huddleSummaryView
-  + See huddleSummaryViews and how many registrations
+  + Create a new huddle: date/time, duration, topic
+  + See huddles and how many registrations
   
-1. See existing huddleSummaryViews
+1. See existing huddles
    - Name
    - Date/time (including timezone)
+   - Duration
+   - Topic
    - Number of people registered
 
 2. View Details of a huddle
@@ -29,4 +34,4 @@ This project manages remote mob programming huddleSummaryViews:
      - Discord username
      - New to group ?
 
-3. Create new huddleSummaryView
+3. Create new huddle

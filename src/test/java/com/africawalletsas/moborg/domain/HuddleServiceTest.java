@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class HuddleServiceScheduleTest {
 
     @Test
-    void scheduledHuddleIsReturnedForAllHuddles() {
+    void singleScheduledHuddleIsReturnedForAllHuddles() {
         HuddleService huddleService = new HuddleService(new InMemoryHuddleRepository());
 
         huddleService.scheduleHuddle("Name", ZonedDateTime.now());

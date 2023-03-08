@@ -1,6 +1,7 @@
 package com.africawalletsas.moborg;
 
 import com.africawalletsas.moborg.domain.HuddleService;
+import com.africawalletsas.moborg.domain.InMemoryHuddleRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -14,7 +15,7 @@ public class MoborgApplication {
 
 	@Bean
 	public HuddleService createHuddleService() {
-		return new HuddleService(null);
+		return new HuddleService(new InMemoryHuddleRepository());
 	}
 
 }

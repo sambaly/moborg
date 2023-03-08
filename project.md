@@ -13,7 +13,7 @@ This project manages remote mob programming huddleSummaryViews:
   - Provide worldTimeBuddy.com links for huddles 
 
 * Dashboard:
-  + Create a new huddle: date/time, duration, topic
+  + Schedule a new huddle: date/time, duration, topic
   + See huddles and how many registrations
   
 1. See existing huddles
@@ -33,5 +33,7 @@ This project manages remote mob programming huddleSummaryViews:
      - Email address
      - Discord username
      - New to group ?
+     
+   - Goals of the huddle( i.e. what's the mission )
 
-3. Create new huddle
+3. Schedule new huddle

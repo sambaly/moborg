@@ -13,7 +13,7 @@ class DashboardControllerTest {
 
     @Test
     void givenOneHuddleResultsInHuddlePutIntoModel() {
-        HuddleService huddleService = new HuddleService();
+        HuddleService huddleService = new HuddleService(null);
         DashboardController dashboardController = new DashboardController(huddleService);
 
         Model model = new ConcurrentModel();
